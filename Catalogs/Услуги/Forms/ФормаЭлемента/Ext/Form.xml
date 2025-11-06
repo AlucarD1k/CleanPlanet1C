@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Описание" id="7">
+			<DataPath>Объект.Описание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ТипУслуги" id="10">
+			<DataPath>Объект.ТипУслуги</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипУслугиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТипУслугиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Изображение" id="13">
+			<DataPath>Объект.Изображение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИзображениеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИзображениеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="МинимальнаяСтоимостьДляПартнера" id="16">
+			<DataPath>Объект.МинимальнаяСтоимостьДляПартнера</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МинимальнаяСтоимостьДляПартнераКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="МинимальнаяСтоимостьДляПартнераРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Себестоимость" id="19">
+			<DataPath>Объект.Себестоимость</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СебестоимостьКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СебестоимостьРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="НормаВремениНаВыполнение" id="22">
+			<DataPath>Объект.НормаВремениНаВыполнение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НормаВремениНаВыполнениеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НормаВремениНаВыполнениеРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="OnChange">НормаВремениНаВыполнениеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Цех" id="25">
+			<DataPath>Объект.Цех</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЦехКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЦехРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ОтвественныйЗаВыполнение" id="28">
+			<DataPath>Объект.ОтвественныйЗаВыполнение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОтвественныйЗаВыполнениеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ОтвественныйЗаВыполнениеРасширеннаяПодсказка" id="30"/>
+			<Events>
+				<Event name="OnChange">ОтвественныйЗаВыполнениеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Материалы" id="31">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Материалы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МатериалыКонтекстноеМеню" id="32"/>
+			<AutoCommandBar name="МатериалыКоманднаяПанель" id="33"/>
+			<ExtendedTooltip name="МатериалыРасширеннаяПодсказка" id="34"/>
+			<SearchStringAddition name="МатериалыСтрокаПоиска" id="35">
+				<AdditionSource>
+					<Item>Материалы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МатериалыСтрокаПоискаКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="МатериалыСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МатериалыСостояниеПросмотра" id="38">
+				<AdditionSource>
+					<Item>Материалы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МатериалыСостояниеПросмотраКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="МатериалыСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МатериалыУправлениеПоиском" id="41">
+				<AdditionSource>
+					<Item>Материалы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МатериалыУправлениеПоискомКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="МатериалыУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">МатериалыПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="МатериалыНомерСтроки" id="44">
+					<DataPath>Объект.Материалы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МатериалыНомерСтрокиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="МатериалыНомерСтрокиРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<InputField name="МатериалыМатериал" id="47">
+					<DataPath>Объект.Материалы.Материал</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МатериалыМатериалКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="МатериалыМатериалРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">МатериалыМатериалПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="МатериалыЕдИзм" id="50">
+					<DataPath>Объект.Материалы.ЕдИзм</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МатериалыЕдИзмКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="МатериалыЕдИзмРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="МатериалыНормаРасхода" id="53">
+					<DataPath>Объект.Материалы.НормаРасхода</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МатериалыНормаРасходаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="МатериалыНормаРасходаРасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="OnChange">МатериалыНормаРасходаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="МатериалыСтоимость" id="56">
+					<DataPath>Объект.Материалы.Стоимость</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МатериалыСтоимостьКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="МатериалыСтоимостьРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="МатериалыСумма" id="59">
+					<DataPath>Объект.Материалы.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МатериалыСуммаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="МатериалыСуммаРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Услуги</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
